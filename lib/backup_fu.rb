@@ -315,7 +315,7 @@ class BackupFu
     else
 
       # TAR it up
-      cmd = niceify "tar -cf #{compressed_path} -C #{dump_base_path} #{db_filename}"
+      cmd = niceify "tar cf #{compressed_path} -C #{dump_base_path} #{db_filename}"
       puts "\nTar: #{cmd}\n" if @verbose
       `#{cmd}`
 
